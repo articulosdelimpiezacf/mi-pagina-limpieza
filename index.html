@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josefa - Artículos de Limpieza y Hogar</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for fonts and specific overrides */
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333333; /* Dark Grey for general text */
+        }
+        .bg-primary-pink {
+            background-color: #FF4081; /* Vibrant Pink */
+        }
+        .text-primary-pink {
+            color: #FF4081; /* Vibrant Pink */
+        }
+        .bg-soft-pink {
+            background-color: #FFF0F5; /* Very Light Pink */
+        }
+        .hover\:bg-darker-pink:hover {
+            background-color: #E03570; /* Slightly darker pink for hover */
+        }
+        .hero-section {
+            background-image: url('images/hero-limpieza.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+        }
+        /* Ensure content is above the overlay */
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+        /* Elegant font for the main logo */
+        .logo-elegant {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary-pink logo-elegant">Josefa Articulos de Limpieza</a>
+            <ul class="flex space-x-6">
+                <li><a href="#inicio" class="text-gray-700 hover:text-primary-pink transition duration-300">Inicio</a></li>
+                <li><a href="#nosotros" class="text-gray-700 hover:text-primary-pink transition duration-300">Nosotros</a></li>
+                <li><a href="#productos" class="text-gray-700 hover:text-primary-pink transition duration-300">Productos</a></li>
+                <li><a href="#promociones" class="text-gray-700 hover:text-primary-pink transition duration-300">Promociones</a></li>
+                <li><a href="#contacto" class="text-gray-700 hover:text-primary-pink transition duration-300">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-section h-screen flex items-center justify-center text-white text-center">
+            <div class="hero-content max-w-3xl p-6 rounded-lg">
+                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down">
+                    ¡Todo en artículos de limpieza y hogar en un solo lugar!
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 animate-fade-in-up">
+                    Productos de calidad para mantener tu edificio, oficina o casa impecable.
+                </p>
+                <a href="#productos" class="bg-primary-pink text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-darker-pink transition duration-300 transform hover:scale-105 inline-block animate-bounce-in">
+                    Descubre Nuestros Productos
+                </a>
+            </div>
+        </section>
+
+        <!-- About Us / Quiénes Somos Section -->
+        <section id="nosotros" class="py-16 bg-soft-pink">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2">
+                    <img src="images/about-us.jpg" alt="Equipo de Josefa" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h2 class="text-4xl font-bold text-primary-pink mb-6">Quiénes Somos</h2>
+                    <p class="text-lg leading-relaxed mb-4">
+                        En <span class="font-bold text-primary-pink">Josefa Articulos de Limpieza</span>, nos dedicamos a ofrecerte la más amplia variedad de productos para el cuidado de tu hogar y negocio. Desde detergentes multiuso hasta desinfectantes especializados, tenemos todo lo que necesitas para mantener tus espacios impecables.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Atendemos a <span class="font-bold">público general, oficinas, empresas y edificios</span>, garantizando siempre los mejores precios y la más alta calidad. ¡Tu satisfacción es nuestra prioridad!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="productos" class="py-16 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-primary-pink mb-12">Nuestros Productos</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Product Card 1 -->
+                    <div class="bg-soft-pink p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                        <img src="images/product-1.jpg" alt="Detergentes Multiuso" class="w-full h-64 object-cover rounded-md mb-4">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Detergentes Multiuso y Lavalozas</h3>
+                        <p class="text-gray-600 mb-4">
+                            Fórmulas concentradas y ecológicas para una limpieza profunda y un brillo impecable en todas tus superficies y vajillas.
+                        </p>
+                        <span class="text-primary-pink text-3xl font-bold">$10.900</span>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="bg-soft-pink p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                        <img src="images/product-2.jpg" alt="Desinfectantes" class="w-full h-64 object-cover rounded-md mb-4">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Desinfectantes (Cloro, Amonio Cuaternario)</h3>
+                        <p class="text-gray-600 mb-4">
+                            Elimina el 99.9% de bacterias y virus, dejando tus espacios seguros y con un aroma fresco.
+                        </p>
+                        <span class="text-primary-pink text-3xl font-bold">$9.900</span>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="bg-soft-pink p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+                        <img src="images/product-3.jpg" alt="Accesorios de Limpieza" class="w-full h-64 object-cover rounded-md mb-4">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Bolsas de Basura, Papel Higiénico y Más</h3>
+                        <p class="text-gray-600 mb-4">
+                            Todo lo que necesitas para el día a día: traperos, mopas, paños de microfibra, guantes y mucho más.
+                        </p>
+                        <span class="text-primary-pink text-3xl font-bold">$14.900</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotions Section -->
+        <section id="promociones" class="py-16 bg-primary-pink text-white text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8">¡PROMOCIONES ESPECIALES!</h2>
+                <p class="text-xl mb-10 max-w-3xl mx-auto">
+                    Aprovecha nuestros combos exclusivos y mantén tu hogar impecable al mejor precio.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Combo 1 -->
+                    <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-primary-pink mb-4">Combo N°1</h3>
+                        <ul class="list-disc list-inside text-left text-lg mb-6">
+                            <li>Manga Confort RENDIPLUS</li>
+                            <li>48 rollos doble hoja</li>
+                        </ul>
+                        <span class="text-primary-pink text-4xl font-bold">$14.900</span>
+                    </div>
+                    <!-- Combo 2 -->
+                    <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-primary-pink mb-4">Combo N°2</h3>
+                        <ul class="list-disc list-inside text-left text-lg mb-6">
+                            <li>Detergente 5lt (concentrado o ecológico)</li>
+                            <li>Suavizante 3lt</li>
+                            <li>Prelavado quitamanchas</li>
+                        </ul>
+                        <span class="text-primary-pink text-4xl font-bold">$10.900</span>
+                    </div>
+                    <!-- Combo 3 -->
+                    <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-primary-pink mb-4">Combo N°3</h3>
+                        <ul class="list-disc list-inside text-left text-lg mb-6">
+                            <li>Lavalozas 5lt</li>
+                            <li>Cloro concentrado 5lt</li>
+                            <li>Desengrasante 1lt</li>
+                        </ul>
+                        <span class="text-primary-pink text-4xl font-bold">$9.900</span>
+                    </div>
+                </div>
+                <a href="#contacto" class="mt-10 inline-block bg-white text-primary-pink px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                    ¡Consulta por reparto a domicilio!
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="py-16 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-primary-pink mb-12">Contáctanos</h2>
+                <div class="flex flex-col md:flex-row justify-center items-start gap-10">
+                    <div class="md:w-1/3 p-6 bg-soft-pink rounded-lg shadow-lg flex flex-col items-center">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Visítanos</h3>
+                        <p class="text-lg mb-2">Chesterton 7611, Las Condes</p>
+                        <!-- Google Maps Embed -->
+                        <div class="w-full h-64 bg-gray-200 rounded-md overflow-hidden mb-4">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.711843926068!2d-70.5694857848011!3d-33.45607178077097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf1b4a9a2a7f%3A0x8f7a9d0a7a0b5b1!2sChesterton%207611%2C%20Las%20Condes%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1678901234567!5m2!1ses-419!2scl"
+                                width="100%"
+                                height="100%"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Chesterton+7611,+Las+Condes" target="_blank" class="text-primary-pink hover:underline text-lg font-medium">Abrir en Google Maps</a>
+                    </div>
+                    <div class="md:w-1/3 p-6 bg-soft-pink rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Escríbenos</h3>
+                        <p class="text-lg mb-2">WhatsApp: <a href="https://wa.me/56989296904" class="text-primary-pink hover:underline">+56989296904</a></p>
+                        <p class="text-lg">Correo: <a href="mailto:articulosdelimpiezacf@gmail.com" class="text-primary-pink hover:underline">articulosdelimpiezacf@gmail.com</a></p>
+                    </div>
+                    <div class="md:w-1/3 p-6 bg-soft-pink rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Síguenos</h3>
+                        <p class="text-lg mb-2">Instagram: <a href="https://www.instagram.com/josefaarticulosdelimpieza/" target="_blank" class="text-primary-pink hover:underline">@JOSEFAARTICULOSDELIMPIEZA</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Josefa Articulos de Limpieza. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
